@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 /**
- * clase principal
+ * clase principal :D
  * 
  * @version 0.1
  * @author mikesaurio
