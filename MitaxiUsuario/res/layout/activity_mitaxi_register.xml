@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mitaxiregister_ll_container_btnnextprev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/selector_btn_background_default"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mitaxiregister_btn_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_background"
+            android:text="@string/mitaxiregister_btn_previous"
+            android:textColor="@drawable/selector_btn_textcolor" />
+
+        <Button
+            android:id="@+id/mitaxiregister_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_background"
+            android:text="@string/mitaxiregister_btn_next"
+            android:textColor="@drawable/selector_btn_textcolor" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/mitaxiregister_vf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mitaxiregister_ll_container_btnnextprev" >
+
+        <ScrollView
+            android:id="@+id/mitaxiregister_sv_container_infouser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <LinearLayout
+                android:id="@+id/mitaxiregister_ll_container_infouser"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mitaxiregister_tv_infousertitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mitaxiregister_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mitaxiregister_et_infousername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mitaxiregister_et_name_hint"
+                    android:inputType="textPersonName"
+                    android:paddingTop="@dimen/activity_vertical_margin" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mitaxiregister_et_infouserlastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mitaxiregister_et_lastname_hint"
+                    android:inputType="textPersonName"
+                    android:paddingTop="@dimen/activity_vertical_margin" />
+
+                <EditText
+                    android:id="@+id/mitaxiregister_et_infouseremail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mitaxiregister_et_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="@dimen/activity_vertical_margin" />
+
+                <EditText
+                    android:id="@+id/mitaxiregister_et_infouserteluser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mitaxiregister_et_teluser_hint"
+                    android:inputType="phone"
+                    android:paddingTop="@dimen/activity_vertical_margin" />
+
+                <EditText
+                    android:id="@+id/mitaxiregister_et_infousertelemergency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mitaxiregister_et_telemergency_hint"
+                    android:inputType="phone"
+                    android:paddingTop="@dimen/activity_vertical_margin" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/mitaxiregister_rl_container_socialnetworks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/mitaxiregister_tv_socialnetworks_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:text="@string/mitaxiregister_tv_socialnetworks"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/mitaxiregister_ll_container_socialnetworks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mitaxiregister_tv_socialnetworks_title"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/mitaxiregister_btn_socialnetworks_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_background"
+                    android:contentDescription="@string/mitaxi_facebook"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageButton
+                    android:id="@+id/mitaxiregister_btn_socialnetworks_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_background"
+                    android:contentDescription="@string/mitaxi_twitter"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_twitter" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/mitaxiregister_rl_container_backgroundshadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dialog_register_background_shadow"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/mitaxiregister_tv_backgroundshadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mitaxiregister_ll_container_backgroundshadow"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/mitaxiregister_ll_container_backgroundshadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/dialog_register_background_light"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/mitaxiregister_et_backgroundshadow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint=""
+                android:text="" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/mitaxiregister_btn_backgroundshadow_ok"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_btn_background"
+                android:contentDescription="@string/mitaxi_twitter"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_ok" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

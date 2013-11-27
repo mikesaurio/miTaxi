@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_register_background_shadow">#77000000</color>
+    <color name="dialog_register_background_light">#FFE0E0E0</color>
+    
+    <color name="selector_btn_textcolor_pressed">#FFFFFFFF</color>
+    <color name="selector_btn_textcolor_focused">#FFFFFFFF</color>
+    <color name="selector_btn_textcolor_default">#FFFFFFFF</color>
+    
+    <color name="selector_btn_background_pressed">#FF0099CC</color>
+    <color name="selector_btn_background_focused">#77000000</color>
+    <color name="selector_btn_background_default">#77000000</color>
+
+</resources>
